@@ -16,6 +16,7 @@ namespace lab1
     {
         TransportProblem TP = null;
         float[,] SupportPlan = null;
+        float[,] SupportPlanMin = null;
         float[,] Optimum;
 
         public Form1()
@@ -74,7 +75,7 @@ namespace lab1
             Stream myStream = null;
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
 
-            openFileDialog1.InitialDirectory = "D:\\";
+            openFileDialog1.InitialDirectory = "\\";
             openFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
             openFileDialog1.FilterIndex = 1;
             openFileDialog1.RestoreDirectory = true;
@@ -199,7 +200,7 @@ namespace lab1
         private void button1_Click_1(object sender, EventArgs e)
         {
             CreateColumnsHeaders(gridFinal);
-            Optimum = TP.PotenMeth(SupportPlan);
+            Optimum = TP.MinEl();
             FillBigGrid(gridFinal, Optimum);
         }
 
@@ -487,9 +488,17 @@ namespace lab1
                 for (i = 0; (i < ASize) && p; i++)
                     for (j = 0; (j < BSize) && p; j++)
                     {
-                        Nl = Allowed[9] = new Point(i, j);
-                        FindWay fw = new FindWay(i, j, true, Allowed, new Point(i, j), null);
-                        p = fw.BuildTree();
+                        try
+                        {
+                            Nl = Allowed[9] = new Point(i, j);
+                            FindWay fw = new FindWay(i, j, true, Allowed, new Point(i, j), null);
+                            p = fw.BuildTree();
+                        }
+                        catch (Exception)
+                        {
+
+                        }
+                        
                     }
                 if (!p) outArr[Nl.X, Nl.Y] = 0;
             }

@@ -52,9 +52,7 @@
             this.lblCheck2 = new System.Windows.Forms.Label();
             this.lblCheck1 = new System.Windows.Forms.Label();
             this.btnCheck = new System.Windows.Forms.Button();
-            this.btnFogel = new System.Windows.Forms.Button();
             this.btnMinEl = new System.Windows.Forms.Button();
-            this.btnNordWest = new System.Windows.Forms.Button();
             this.gridSupport = new System.Windows.Forms.DataGridView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.lblOptimum = new System.Windows.Forms.Label();
@@ -76,8 +74,8 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.Controls.Add(this.btnMakeGood);
             this.panel1.Controls.Add(this.btnFillGrids);
@@ -119,9 +117,9 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
@@ -146,8 +144,8 @@
             // 
             // gridB
             // 
-            this.gridB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.gridB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.gridB.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.gridB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridB.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -173,9 +171,9 @@
             // 
             // gridC
             // 
-            this.gridC.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridC.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gridC.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
@@ -201,8 +199,8 @@
             // 
             // gridA
             // 
-            this.gridA.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.gridA.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.gridA.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.gridA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridA.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -250,9 +248,7 @@
             this.tabPage2.Controls.Add(this.lblCheck2);
             this.tabPage2.Controls.Add(this.lblCheck1);
             this.tabPage2.Controls.Add(this.btnCheck);
-            this.tabPage2.Controls.Add(this.btnFogel);
             this.tabPage2.Controls.Add(this.btnMinEl);
-            this.tabPage2.Controls.Add(this.btnNordWest);
             this.tabPage2.Controls.Add(this.gridSupport);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
@@ -271,7 +267,7 @@
             // 
             // btnFirstPay
             // 
-            this.btnFirstPay.Location = new System.Drawing.Point(3, 148);
+            this.btnFirstPay.Location = new System.Drawing.Point(3, 64);
             this.btnFirstPay.Name = "btnFirstPay";
             this.btnFirstPay.Size = new System.Drawing.Size(104, 23);
             this.btnFirstPay.TabIndex = 7;
@@ -297,7 +293,7 @@
             // 
             // btnCheck
             // 
-            this.btnCheck.Location = new System.Drawing.Point(3, 90);
+            this.btnCheck.Location = new System.Drawing.Point(3, 35);
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.Size = new System.Drawing.Size(104, 23);
             this.btnCheck.TabIndex = 4;
@@ -305,34 +301,15 @@
             this.btnCheck.UseVisualStyleBackColor = true;
             this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
-            // btnFogel
-            // 
-            this.btnFogel.Location = new System.Drawing.Point(3, 61);
-            this.btnFogel.Name = "btnFogel";
-            this.btnFogel.Size = new System.Drawing.Size(104, 23);
-            this.btnFogel.TabIndex = 3;
-            this.btnFogel.Text = "Фогель";
-            this.btnFogel.UseVisualStyleBackColor = true;
-            // 
             // btnMinEl
             // 
-            this.btnMinEl.Location = new System.Drawing.Point(3, 32);
+            this.btnMinEl.Location = new System.Drawing.Point(3, 6);
             this.btnMinEl.Name = "btnMinEl";
             this.btnMinEl.Size = new System.Drawing.Size(104, 23);
             this.btnMinEl.TabIndex = 2;
             this.btnMinEl.Text = "Мин. эл-т";
             this.btnMinEl.UseVisualStyleBackColor = true;
             this.btnMinEl.Click += new System.EventHandler(this.btnMinEl_Click);
-            // 
-            // btnNordWest
-            // 
-            this.btnNordWest.Location = new System.Drawing.Point(3, 3);
-            this.btnNordWest.Name = "btnNordWest";
-            this.btnNordWest.Size = new System.Drawing.Size(104, 23);
-            this.btnNordWest.TabIndex = 1;
-            this.btnNordWest.Text = "С-З угол";
-            this.btnNordWest.UseVisualStyleBackColor = true;
-            this.btnNordWest.Click += new System.EventHandler(this.btnNordWest_Click);
             // 
             // gridSupport
             // 
@@ -457,9 +434,7 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button btnFillGrids;
         private System.Windows.Forms.DataGridViewTextBoxColumn MatrA;
-        private System.Windows.Forms.Button btnFogel;
         private System.Windows.Forms.Button btnMinEl;
-        private System.Windows.Forms.Button btnNordWest;
         private System.Windows.Forms.DataGridView gridSupport;
         private System.Windows.Forms.DataGridViewTextBoxColumn MatrB;
         private System.Windows.Forms.Label lblCheck1;
